@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // Add build steps here
                 sh 'echo "Building..."'
-                sh echo "Hello this is my first Building Stage"
+                sh 'echo "Hello this is my first Building Stage"'
             }
         }
         stage('Test') {
@@ -13,7 +13,7 @@ pipeline {
                 // Add test steps here
                 sh 'echo "Testing..."'
 
-                sh echo "Hello this is my First Testing Stage"
+                sh 'echo "Hello this is my First Testing Stage"'
             }
         }
         stage('Deploy') {
